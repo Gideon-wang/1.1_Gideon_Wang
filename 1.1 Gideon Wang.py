@@ -6,15 +6,18 @@
 '''
 #----------------libraries---------------
 #----------------functions---------------
-def times(result):
+def average(result):
+    total=0
     for i in range(result):
         days=["day1","day2","day3","day4","day5"]
         running_result=int(input(f"what is your running times in minutes for {days[i]} :"))
         list_result.append(running_result)
+        total+=list_result[i]
+        average=total/len(list_result)
+    print(f"your average grade is {average}")
 #----------------main routine------------
 name=input("enter your name:")
 age=int(input("enter you age:"))
 list_result=[]
-times(5)
-total=list_result[0]+list_result[1]+list_result[2]+list_result[3]+list_result[4]
-print(total)
+average(5)
+
