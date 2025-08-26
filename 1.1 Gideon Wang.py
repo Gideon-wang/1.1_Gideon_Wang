@@ -19,7 +19,7 @@ def average(result):
         list_result.append(running_result)
         total+=list_result[i]
         average=total/len(list_result)
-    print(f"your average grade is {average}")
+    print(f"your results are{list_result} and your average grade is {average}")
 #----------------main routine------------
 name=input("enter your name:")
 age=int(input("enter you age:"))
