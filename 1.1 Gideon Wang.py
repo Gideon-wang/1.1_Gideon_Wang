@@ -6,11 +6,16 @@
 '''
 #----------------libraries---------------
 #----------------functions---------------
+def max(num1,num2):
+    if num1>num2:
+        return(num1)
+    else:
+        return(num2)
 def average(result):
     total=0
     for i in range(result):
-        days=["day1","day2","day3","day4","day5"]
-        running_result=int(input(f"what is your running times in minutes for {days[i]} :"))
+        days=i+1
+        running_result=int(input(f"what is your running times in minutes for day{days}:"))
         list_result.append(running_result)
         total+=list_result[i]
         average=total/len(list_result)
@@ -20,4 +25,8 @@ name=input("enter your name:")
 age=int(input("enter you age:"))
 list_result=[]
 average(5)
-
+a=max(list_result[0],list_result[1])
+b=max(list_result[2],list_result[3])
+c=max(a,b)
+d=max(c,list_result[4])
+print(f"your best running time is {d}")
