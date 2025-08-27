@@ -24,11 +24,11 @@ def average(result):
     total=0
     for i in range(result):
         days=i+1
-#keep looping until the user enters the valid running_result      
+        #keep looping until the user enters the valid running_result      
         while True:
             try:
                 running_result=int(input(f"what is your running times in minutes for day{days}:"))#record the times in number
-                if running_result>=10 and running_result<=600:#the number range is 10-600 and avoid people using hours as a unit of measure
+                if running_result>=10 and running_result<=60:#the number range is 10-600 and avoid people using hours as a unit of measure
                     break
                 else:
                     print("the number you entered is unrealistic(note that the unit is minutes)")
@@ -38,17 +38,17 @@ def average(result):
         total+=list_result[i]#calculate the total running time
         average=total/len(list_result)#calculate the average running time
     print(f"your results are{list_result} and your average grade is {average}")#print out the reults in list and the average time
-#this loop is to personalize evaluation of user average time    
-    if average<=30:
+    #this loop is to personalize evaluation of user average time    
+    if average<=20:
         print("you need to work harder")
-    elif average<=60:
+    elif average<=40:
         print("please keep up the momentum")
     else:
         print("well done")
 #----------------main routine------------
 #keep looping until the user enters the valid name
 while True:
-    name=input("enter your name:")
+    name=input("enter your first name:")
     if name.isalpha():#record the name in string
         if len(name)>=2 and len(name)<=10:#check the length of the name
             break
