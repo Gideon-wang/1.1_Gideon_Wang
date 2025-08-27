@@ -18,10 +18,10 @@ def average(result):
         while True:
             try:
                 running_result=int(input(f"what is your running times in minutes for day{days}:"))
-                if running_result>=0 and running_result<=600:
+                if running_result>=10 and running_result<=600:
                     break
                 else:
-                    print("the number you entered is unrealistic")
+                    print("the number you entered is unrealistic(note that the unit is minutes)")
             except:
                 print("you must enter a number")
         list_result.append(running_result)
@@ -38,10 +38,21 @@ def average(result):
 while True:
     name=input("enter your name:")
     if name.isalpha():
-        break
+        if len(name)>=2 and len(name)<=10:
+            break
+        else:
+            print("you must enter a valid name")
     else:
         print("you must enter a string")
-age=int(input("enter you age:"))
+while True:
+    try:
+        age=int(input("enter you age:"))
+        if age>=15 and age<=17:
+            break
+        else:
+            print("you must enter your real age")
+    except:
+        print("you must enter a number")
 list_result=[]
 average(5)
 a=max(list_result[0],list_result[1])
