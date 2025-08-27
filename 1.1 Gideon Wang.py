@@ -30,3 +30,9 @@ b=max(list_result[2],list_result[3])
 c=max(a,b)
 d=max(c,list_result[4])
 print(f"your best running time is {d}")
+if average<=30:
+    print("you need to work harder")
+elif average<=60:
+    print("please keep up the momentum")
+else:
+    print("well done")
