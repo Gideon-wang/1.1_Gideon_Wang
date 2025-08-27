@@ -15,7 +15,15 @@ def average(result):
     total=0
     for i in range(result):
         days=i+1
-        running_result=int(input(f"what is your running times in minutes for day{days}:"))
+        while True:
+            try:
+                running_result=int(input(f"what is your running times in minutes for day{days}:"))
+                if running_result>=0 and running_result<=600:
+                    break
+                else:
+                    print("the number you entered is unrealistic")
+            except:
+                print("you must enter a number")
         list_result.append(running_result)
         total+=list_result[i]
         average=total/len(list_result)
@@ -27,7 +35,12 @@ def average(result):
     else:
         print("well done")
 #----------------main routine------------
-name=input("enter your name:")
+while True:
+    name=input("enter your name:")
+    if name.isalpha():
+        break
+    else:
+        print("you must enter a string")
 age=int(input("enter you age:"))
 list_result=[]
 average(5)
