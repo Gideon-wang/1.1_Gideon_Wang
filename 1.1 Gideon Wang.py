@@ -21,9 +21,9 @@ def max(num1,num2):
 #and make a personalized evalution.
 #----------------------------------------
 def average(result):
-    total=0
+    total=0#initisl value
     for i in range(result):
-        days=i+1
+        days=i+1#display days correctly
         #keep looping until the user enters the valid running_result      
         while True:
             try:
@@ -48,7 +48,7 @@ def average(result):
 #----------------main routine------------
 #keep looping until the user enters the valid name
 while True:
-    name=input("enter your first name:")
+    name=input("enter your first name:")#ask for the name
     if name.isalpha():#record the name in string
         if len(name)>=2 and len(name)<=10:#check the length of the name
             break
@@ -56,11 +56,11 @@ while True:
             print("you must enter a valid name")
     else:
         print("you must enter a string")
-#this loop is used to make sure the user is in Year11
+#keep looping until the user enters the valid age
 while True:
     try:
         age=int(input("enter you age:"))#record the age in number
-        if age>=15 and age<=17:
+        if age>=15 and age<=17:#to make sure the user is in Year11
             break
         else:
             print("you must enter your real age")
