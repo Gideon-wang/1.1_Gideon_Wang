@@ -1,7 +1,7 @@
 '''
    name=Gideon Wang
-   version:3
-   date:28/08/2025
+   version:4
+   date:29/08/2025
    description:assessment
 '''
 #----------------libraries---------------
