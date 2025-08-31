@@ -53,7 +53,7 @@ while True:
         if len(name)>=2 and len(name)<=10:#check the length of the name
             break
         else:
-            print("you must enter a valid name")
+            print("the number you entered is not allowed")
     else:
         print("you must enter a string")
 #keep looping until the user enters the valid age
