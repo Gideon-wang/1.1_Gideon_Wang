@@ -28,7 +28,7 @@ def average(result):
         while True:
             try:
                 running_result=int(input(f"what is your long-distance running times in minutes for day{days}:"))#record the times in number
-                if running_result>=10 and running_result<=60:#the number range is 10-600 and avoid people using hours as a unit of measure
+                if running_result>=10 and running_result<=60:#the number range is 10-60 and avoid people using hours as a unit of measure
                     break
                 else:
                     print("the number you entered is unrealistic(note that the unit is minutes)")
