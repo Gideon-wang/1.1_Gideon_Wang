@@ -27,7 +27,7 @@ def average(result):
         #keep looping until the user enters the valid running_result      
         while True:
             try:
-                running_result=int(input(f"what is your running times in minutes for day{days}:"))#record the times in number
+                running_result=int(input(f"what is your long-distance running times in minutes for day{days}:"))#record the times in number
                 if running_result>=10 and running_result<=60:#the number range is 10-600 and avoid people using hours as a unit of measure
                     break
                 else:
